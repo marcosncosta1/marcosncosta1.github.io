@@ -1,562 +1,367 @@
 <!DOCTYPE html>
-<!--[if lte IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<!--<![endif]-->
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos Costa | Software Engineer</title>
+  <meta name="description" content="Marcos Costa — Software Engineer with interests in Machine Learning, Robotics, and Technology.">
 
-	<title>M-code Website</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
 
-	<!-- Behavioral Meta Data -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Mcosta215">
+  <meta name="twitter:title" content="Marcos Costa | Software Engineer">
+  <meta name="twitter:description" content="Software Engineer with interests in Machine Learning, Robotics, and Technology.">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-	<!-- Twitter Card Meta Data -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@Mcosta215">
-	<meta name="twitter:creator" content="@Mcosta215">
-	<meta name="twitter:title" content="M">
-	<meta name="twitter:description" content="Technical Analysis, Software Engineering, and Freedom.">
-	<meta name="twitter:image" content="https://twitter.com/Mcosta215">
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.png" type="image/png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic|Montserrat:700,400' rel='stylesheet'
-		type='text/css'>
-
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/loader.css" />
-	<link rel="stylesheet" type="text/css" href="css/framework.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-
-	<!-- Colors -->
-	<link rel="stylesheet" type="text/css" href="css/colors/blue.css" media="screen">
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/red.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/green.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/pink.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/orange.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/gray.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/purple.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/steel.css" media="screen"> -->
-
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/ie.css" />
-	<![endif]-->
-
-	<!-- Javascript -->
-	<script src="js/jquery.js"></script>
-	<script src="js/modernizr.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body>
-	<!-- Loader -->
-	<div class="loader center dark">
-		<div class="loader-content">
-			<img src="images/logo.png" width="138" height="25" alt="logo"><br>
-			<span class="progress-container"><span class="progress"></span></span>
-		</div>
-		<script type="text/javascript">
-			$(window).load(function () {
-				$('.loader').delay(1000).fadeOut('slow')
-			});
-		</script>
-	</div><!-- END LOADER -->
 
-	<!-- Header -->
-	<header>
-		<!-- Logo -->
-		<div class="header-inner">
-			<a class="logo" href="#"><img src="images/logo.png" alt="logo" width="138" height="25"></a>
-		</div>
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#about" class="nav-logo">Marcos Costa</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-		<!-- Menu Button -->
-		<div class="menu-button">
-			<span class="before"></span>
-			<span class="main"></span>
-			<span class="after"></span>
-		</div>
-	</header><!-- END Header -->
+  <!-- ===================== HERO / ABOUT ===================== -->
+  <section id="about" class="hero">
+    <div class="container">
+      <div class="hero-content">
 
-	<!-- Navigation -->
-	<nav class="push-nav push-right" style="background-image: url(images/navigation.jpg);">
-		<!-- Logo -->
-		<div class="logo-nav"><a href="#"><img src="images/logo.png" alt="logo" width="138" height="25"></a></div>
-		<div class="footer-nav">
-			<!-- Social -->
-			<ul class="social">
-				<li><a href="#"><i class="social-icon-linkedin"></i></a></li>
-				<li><a href="#"><i class="social-icon-twitter"></i></a></li>
-			</ul>
+        <div class="hero-text">
+          <h1>Marcos Costa</h1>
+          <p class="hero-title">Software Engineer</p>
+          <p class="hero-tags">Machine Learning &nbsp;&middot;&nbsp; Robotics &nbsp;&middot;&nbsp; Technology</p>
+          <p class="hero-bio">
+            I build software at the intersection of intelligence and the physical world —
+            with a focus on machine learning, robotics, and tools that make a real difference.
+            My background as a professional climber for over 29 years taught me to push limits
+            and think creatively under pressure; I bring that same drive to every engineering challenge.
+          </p>
+          <div class="hero-links">
+            <!-- GitHub -->
+            <a href="https://github.com/MCDF31" class="link-icon" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/marcos-costa-a276242/" class="link-icon" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <!-- Twitter / X -->
+            <a href="https://twitter.com/Mcosta215" class="link-icon" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.631L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-			<!-- Copyright -->
-			<h6>Copyright © 2022 M-code</h6>
-		</div>
+        <div class="hero-photo">
+          <img src="images/team/marcos.png" alt="Marcos Costa">
+        </div>
 
-		<!-- Links -->
-		<ul class="navigation">
-			<li><a class="scroll-to" href="#section1">Home</a></li>
-			<li><a class="scroll-to" href="#section2">About</a></li>
-			<li><a class="scroll-to" href="#section5">Work</a></li>
-			<li><a class="scroll-to" href="#section9">Contact</a></li>
-		</ul>
-	</nav><!-- END Navigation -->
+      </div>
+    </div>
+  </section>
 
-	<!-- Main Wrap -->
-	<div class="navigation-overlay"></div>
-	<div id="wrap">
+  <!-- ===================== EXPERIENCE ===================== -->
+  <!--
+  HOW TO ADD AN EXPERIENCE ITEM:
+  Copy the .timeline-item block below, paste it inside .timeline,
+  and update the date, role, company, and description.
+  -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
 
-		<!-- Hero -->
-		<section id="section1" class="hero video-background dark center nav-trigger">
-			<!-- Video Container -->
-			<div id="bgVideo" data-0="transform: translate3d(0px, 0px, 0px);"
-				data-top-bottom="transform: translate3d(0px, 300%, 0px);"></div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024 – Present</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Research Engineer</h3>
+            <p class="timeline-company">ZHAW — School of Engineering</p>
+            <p class="timeline-desc">
+              Developed HandFit, a Blender add-on that automates 3D-printed prosthetic hand fitting
+              using landmark-based alignment and anisotropic geometry processing. Reduced fitting time
+              from 30–60 minutes to under 5 minutes with sub-millimeter precision (±0.01 mm RMSE).
+            </p>
+          </div>
+        </div>
 
-			<!-- Hero Content -->
-			<div class="container hero-content">
-				<div class="col-xs-12 col-sm-10 col-sm-offset-1" data-0="opacity: 1;" data-top-bottom="opacity: 0;">
-					<h1>Welcome to &lt;M-code/&gt</h1>
-					<span class="separator"></span>
-					<h5>Design &amp; development.</h5>
-				</div>
-			</div>
+        <!--
+        TEMPLATE — copy and fill in:
+        <div class="timeline-item">
+          <div class="timeline-date">YEAR – YEAR</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Job Title</h3>
+            <p class="timeline-company">Company / Organisation</p>
+            <p class="timeline-desc">What you did and what impact it had.</p>
+          </div>
+        </div>
+        -->
 
-			<!-- Scroll Icon -->
-			<a class="icon-scroll" href="#section2" data-0="opacity: 1;" data-100="opacity: 0;">
-				<i class="icon-basic-magic-mouse"></i>
-			</a>
-		</section><!-- END Hero -->
+      </div>
+    </div>
+  </section>
 
-		<!-- Feature boxes -->
-		<section id="section2" class="container center padded">
-			<!-- Title -->
-			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-					<h4>What I do.</h4>
-					<p class="sub-heading">Create experiences that transform brands, grow businesses and make
-						people’s lives better.</p>
-				</div>
-			</div>
+  <!-- ===================== PROJECTS ===================== -->
+  <!--
+  HOW TO ADD A NEW PROJECT:
+  1. Copy one of the .project-card blocks below.
+  2. Paste it inside .projects-grid.
+  3. Update:
+     - data-category="ml-ai | engineering | web"
+     - img src (add your image to images/portfolio/)
+     - .project-title, .project-desc, .tag elements
+     - href links
+  4. Add "featured" to class if it should span the full width.
+  -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
 
-			<!-- Boxes -->
-			<div class="row">
-				<!-- 1 -->
-				<div class="feature-box col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
-					<i class="icon-medium icon-basic-lightbulb"></i>
-					<span class="separator-small"></span>
-					<h5>Idea</h5>
-					<p>From back end to front end ideas, I approach my projects with strategic
-						and creative thinking.</p>
-				</div>
-				<!-- 2 -->
-				<div class="feature-box col-sm-4 wow fadeInUp" data-wow-delay="0.8s">
-					<i class="icon-medium icon-basic-laptop"></i>
-					<span class="separator-small"></span>
-					<h5>Concept</h5>
-					<p>I partner with my clients to create big ideas and translate them into innovative digital
-						experiences.</p>
-				</div>
-				<!-- 3 -->
-				<div class="feature-box col-sm-4 wow fadeInUp" data-wow-delay="1s">
-					<i class="icon-medium icon-basic-keyboard"></i>
-					<span class="separator-small"></span>
-					<h5>Deployment</h5>
-					<p>From prototyping through front &amp; back end engineering to quality testing, I use the latest
-						technologies.</p>
-				</div>
-			</div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml-ai">ML / AI</button>
+        <button class="filter-btn" data-filter="engineering">Engineering</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
 
-			<!-- Call to action -->
-			<div class="row">
-				<div class="col-xs-12 wow fadeInUp call-to-action" data-wow-delay="1s">
-					<a href="#section5" class="button">view work</a>
-				</div>
-			</div>
-		</section><!-- END Feature Boxes -->
+      <div class="projects-grid">
 
+        <!-- HandFit — Featured -->
+        <div class="project-card featured" data-category="ml-ai">
+          <div class="project-badge">Featured</div>
+          <!-- Replace with a proper HandFit screenshot when available -->
+          <img class="project-img" src="images/portfolio/pic04.jpg" alt="HandFit — Automated Prosthetic Fitting">
+          <div class="project-body">
+            <h3 class="project-title">HandFit</h3>
+            <p class="project-desc">
+              A free Blender add-on that automates the customisation of 3D-printed prosthetic hands.
+              Uses landmark-based alignment, anisotropic scaling, and shrinkwrap socket conformation
+              to reduce fitting time from 30–60 minutes to under 5 minutes — with sub-millimeter
+              precision across all 8 Kinetic Hand variants.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Blender</span>
+              <span class="tag">3D Geometry</span>
+              <span class="tag">Prosthetics</span>
+              <span class="tag">Open Source</span>
+            </div>
+            <div class="project-links">
+              <a href="handfit/" class="btn-project">View Project</a>
+            </div>
+          </div>
+        </div>
 
-		<!-- Begin Progress Slider -->
-		<section id="section4" class="center padded black">
-			<!-- Title -->
-			<div>
-				<p class="sub-heading wow fadeInRight" data-wow-delay="0.5s">The process.</p>
-			</div>
+        <!-- Loan Calculator -->
+        <div class="project-card" data-category="engineering">
+          <img class="project-img" src="images/portfolio/loan.jpg" alt="Loan Calculator">
+          <div class="project-body">
+            <h3 class="project-title">Loan Calculator</h3>
+            <p class="project-desc">
+              An interactive loan calculator that computes monthly payments, total interest,
+              and full amortisation schedules from user-defined inputs.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="loan_calculator.html" class="btn-project">View Project</a>
+            </div>
+          </div>
+        </div>
 
-			<!-- Slider -->
-			<div class="royalSlider rsProgress">
-				<!-- Slide 1 -->
-				<div class="rsContent wow fadeInRight" data-wow-delay="0.8s">
-					<!-- Progress Bar -->
-					<span class="progress-bar start"></span>
+        <!-- Shape Calculator -->
+        <div class="project-card" data-category="engineering">
+          <img class="project-img" src="images/portfolio/shape_calculator.jpg" alt="Shape Calculator">
+          <div class="project-body">
+            <h3 class="project-title">Shape Calculator</h3>
+            <p class="project-desc">
+              A Python geometry library that computes area and perimeter for a range of 2D shapes
+              using clean object-oriented design and unit-tested logic.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">OOP</span>
+            </div>
+            <div class="project-links">
+              <a href="shape_calculator.html" class="btn-project">View Project</a>
+            </div>
+          </div>
+        </div>
 
-					<div class="container">
-						<!-- Icon -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 icon">
-								<i class="icon-large icon-basic-book-pencil"></i>
-							</div>
-						</div>
+        <!-- Survey Page -->
+        <div class="project-card" data-category="web">
+          <img class="project-img" src="images/portfolio/survey_photo.jpg" alt="Survey Page">
+          <div class="project-body">
+            <h3 class="project-title">Survey Page</h3>
+            <p class="project-desc">
+              A fully responsive survey web page with clean form UX,
+              custom styling, and accessible markup.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="survey.html" class="btn-project">View Project</a>
+            </div>
+          </div>
+        </div>
 
-						<!-- Heading -->
-						<div class="row">
-							<div class="col-xs-12">
-								<h2>Planning</h2>
-							</div>
-						</div>
+        <!-- Budget App -->
+        <div class="project-card" data-category="engineering">
+          <img class="project-img" src="images/portfolio/pic02.jpg" alt="Budget App — In Progress">
+          <div class="project-body">
+            <h3 class="project-title">Budget App</h3>
+            <p class="project-desc">
+              A personal finance tracking application for managing income, expenses,
+              and savings goals. Currently in development.
+            </p>
+            <div class="project-tags">
+              <span class="tag">In Progress</span>
+            </div>
+            <div class="project-links">
+              <a href="coming-soon.html" class="btn-project btn-outline">Coming Soon</a>
+            </div>
+          </div>
+        </div>
 
-						<!-- Text -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-								<p>During the exploration stage, I dive into the clients’ business requirements and
-									competitive landscape.</p>
-							</div>
-						</div>
-					</div>
+      </div><!-- END projects-grid -->
+    </div>
+  </section>
 
-					<!-- Tab Control -->
-					<span class="rsTmb">01</span>
-				</div><!-- END Slide -->
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <!--
+  HOW TO ADD A PUBLICATION:
+  Copy the .pub-item block below, paste it inside .publications-list,
+  remove the .empty-note paragraph, and fill in your details.
 
-				<!-- Slide 2 -->
-				<div class="rsContent">
-					<!-- Progress Bar -->
-					<span class="progress-bar"></span>
+  <div class="pub-item">
+    <img class="pub-thumb" src="images/portfolio/YOUR_PAPER_IMG.jpg" alt="Paper thumbnail">
+    <div class="pub-body">
+      <h3 class="pub-title">Your Paper Title</h3>
+      <p class="pub-authors">Author One, Marcos Costa, Author Three</p>
+      <p class="pub-venue">Conference / Journal Name, Year</p>
+      <div class="pub-links">
+        <a href="PAPER_URL" class="btn-project" target="_blank" rel="noopener">Paper</a>
+        <a href="GITHUB_URL" class="btn-project btn-outline" target="_blank" rel="noopener">Code</a>
+      </div>
+    </div>
+  </div>
+  -->
+  <section id="publications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <div class="publications-list">
+        <p class="empty-note">No publications yet — check back soon.</p>
+      </div>
+    </div>
+  </section>
 
-					<div class="container">
-						<!-- Icon -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 icon">
-								<i class="icon-large icon-basic-display"></i>
-							</div>
-						</div>
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">
+        Interested in collaborating, discussing a project, or just want to say hello?
+        Feel free to reach out — I'm always happy to connect.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:marcos@mnttoken.com" class="contact-btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/marcos-costa-a276242/" class="contact-btn contact-btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-						<!-- Heading -->
-						<div class="row">
-							<div class="col-xs-12">
-								<h2>Development</h2>
-							</div>
-						</div>
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Marcos Costa</p>
+    </div>
+  </footer>
 
-						<!-- Text -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-								<p>Once I have a clear strategy and I know what I want to achieve, it’s time to put on the
-									designer hat and roll up my sleeves.</p>
-							</div>
-						</div>
-					</div>
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    // ----- Project filter -----
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
 
-					<!-- Tab Control -->
-					<span class="rsTmb">02</span>
-				</div><!-- END Slide -->
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(card => {
+          card.style.display = (f === 'all' || card.dataset.category === f) ? '' : 'none';
+        });
+      });
+    });
 
-				<!-- Slide 3 -->
-				<div class="rsContent">
-					<!-- Progress Bar -->
-					<span class="progress-bar finish"></span>
+    // ----- Mobile nav toggle -----
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-					<div class="container">
-						<!-- Icon -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 icon">
-								<i class="icon-large icon-basic-flag1"></i>
-							</div>
-						</div>
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
 
-						<!-- Heading -->
-						<div class="row">
-							<div class="col-xs-12">
-								<h2>Launch</h2>
-							</div>
-						</div>
+    // Close nav on link click (mobile)
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      });
+    });
 
-						<!-- Text -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ">
-								<p>Following thorough quality assurance and the ok from the client the project
-									is finally ready to be released.</p>
-							</div>
-						</div>
-					</div>
+    // ----- Sticky nav highlight on scroll -----
+    const sections = document.querySelectorAll('section[id]');
 
-					<!-- Tab Control -->
-					<span class="rsTmb">03</span>
-				</div>
-			</div><!-- END Slider -->
-		</section><!-- END Progress Slider -->
+    function updateNav() {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 80) current = s.id;
+      });
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    }
 
-		<!-- Begin Portfolio -->
-		<section id="section5" class="center padded nb">
-			<div class="container">
-				<!-- Title -->
-				<div class="row">
-					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 wow fadeInUp"
-						data-wow-delay="0.3s">
-						<h4>The work.</h4>
-					</div>
-				</div>
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+  </script>
 
-				<!-- Filters -->
-				<div class="row">
-					<ul class="col-xs-12 filters">
-						<li data-filter="*" class="is-checked wow fadeInUp" data-wow-delay="0.5s">All</li>
-						<li data-filter=".programming" class="wow fadeInUp" data-wow-delay="0.8s">Programming</li>
-						<li data-filter=".web-design" class="wow fadeInUp" data-wow-delay="1s">Web Design</li>
-						<li data-filter=".cryptocurrency" class="wow fadeInUp" data-wow-delay="1.2s">Cryptocurrency</li>
-					</ul>
-				</div>
-			</div><!-- END Container -->
-
-			<div class="thumbnails dark">
-				<div class="thumbnail programming">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="loan_calculator.html">Loan Calculator</a>
-					</div>
-					<img src="images/portfolio/loan.jpg" alt="thumbnail">
-				</div>
-
-
-				<div class="thumbnail web-design">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="survey.html">Survey Page</a>
-					</div>
-					<img src="images/portfolio/survey_photo.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail cryptocurrency">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="https://www.mnttoken.com">Cryptocurrency</a>
-					</div>
-					<img src="images/portfolio/ada_bull.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail programming">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="arithmetic_formatter.html">Arithmetic Formatter</a>
-					</div>
-					<img src="images/portfolio/pic07.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail web-design">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="elon_tribute.html">Tribute Page</a>
-					</div>
-					<img src="images/portfolio/Elon_Musk.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail programming">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="shape_calculator.html">Shape Calculator</a>
-					</div>
-					<img src="images/portfolio/shape_calculator.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail web-design">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="technical_documentation.html">Technical Documentation Page</a>
-					</div>
-					<img src="images/portfolio/ada_coin.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail programming">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="coming-soon.html">Budget App</a>
-					</div>
-					<img src="images/portfolio/pic02.jpg" alt="thumbnail">
-				</div>
-			</div><!-- END Thumbnails -->
-		</section><!-- END Portfolio -->
-
-		<!-- Begin Team Block -->
-		<section id="section6" class="container center padded">
-			<!-- Title -->
-			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-					<h4>About Me.</h4>
-					<p class="sub-heading">Meet the human behind the &lt;M-code/&gt brand.</p>
-				</div>
-			</div>
-
-			<!-- Photos -->
-			<div class="row">
-
-				<div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-delay="1.0s">
-					<!-- Photo -->
-					<img class="team-photo" src="images/team/marcos.png">
-
-					<!-- Team Info -->
-					<div class="team-info clearfix">
-						<span class="contact-information">
-							<p>Marcos Costa</p>
-							<h6>Software Engineer</h6>
-						</span>
-						<div class="mail"><a href="mailto:marcos@mnttoken.com"><i class="icon-basic-mail"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 call-to-action wow fadeInUp" data-wow-delay="1s">
-					<p>I come from a professional sports background. I have been a climber for over 29 years and for the
-						past few
-					 years I have been climbing the worlds most challenging mountains professionally. This journey
-						has taken me all
-						across the globe and pushed my boundaries on every front physically and mentally. I also had
-						plenty of time to explore other
-						interesting fields in life. Technology is one of the fields that mesmerizes me and got my attention over the years. A famous
-						quote that always comes to mind is:
-
-					<div class="quote">
-						<center>
-							<blockquote> "Any sufficiently advanced technology is indistinguishable from magic"
-							</blockquote>
-						</center>
-					</div>
-
-					In 1962, science fiction writer Arthur C. Clarke wrote in his book “Profiles of the Future: An
-					Inquiry into the Limits of the Possible” where he formulated his famous Three Laws, of which the
-					third law is the best-known and most widely cited.
-					This quote has stuck with me throught the years as I wondered what it would be like to produce
-					"magic". Being a software engineer is a bit like that. On one side we create
-					software on hundreds and sometimes thousands of lines of code and on the other end "magic" comes out!
-					</p>
-				</div>
-				<div class="col-xs-12 col-sm-10 col-sm-offset-1 twitter call-to-action">
-					<h5>latest <i class="social-icon-twitter"></i> tweet</h5>
-					<span class="separator-small"></span>
-					<div id="twit-feed"></div>
-					<a class="button" href="#section9">get in touch</a>
-				</div>
-			</div>
-		</section><!-- END Team Block -->
-
-
-
-		<!-- Begin Contact -->
-		<section id="section9" class="contact center">
-			<!-- Switch -->
-			<div class="switch dark"></div>
-
-	</div>
-
-	<!-- Contact Form -->
-	<div class="map-overlay padded dark">
-		<div class="container">
-			<!-- Title -->
-			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-					<h4>Contact.</h4>
-					<p class="sub-heading">What can I help you with?</p>
-				</div>
-			</div>
-
-			<!-- Form -->
-			<div class="row">
-				<div class="col-xs-12 col-lg-10 col-lg-offset-1">
-					<form method="post" action="post.php" name="contactform" id="contactform" class="clearfix">
-						<fieldset>
-							<div class="float-left">
-								<div class="form-field name wow fadeInUp" data-wow-delay="0.5s">
-									<label for="name">Name</label>
-									<span><input type="text" name="name" id="name"
-											onfocus="if(this.value == 'Your Name') { this.value = ''; }"
-											onblur="if(this.value == '') { this.value = 'Your Name'; }"
-											value="Your Name" /></span>
-								</div>
-								<div class="form-field email wow fadeInUp" data-wow-delay="0.8s">
-									<label for="email">Email</label>
-									<span><input type="email" name="email" id="email"
-											onfocus="if(this.value == 'E-mail Address') { this.value = ''; }"
-											onblur="if(this.value == '') { this.value = 'E-mail Address'; }"
-											value="E-mail Address" /></span>
-								</div>
-							</div>
-							<div class="float-right">
-								<div class="form-field message wow fadeInUp" data-wow-delay="1s">
-									<label for="message">Message</label>
-									<span><textarea name="message" id="message"
-											onfocus="if(this.value == 'If you wish to work with us or just get in touch - do it.') { this.value = ''; }"
-											onblur="if(this.value == '') { this.value = 'If you wish to work with us or just get in touch - do it.'; }">If you wish to work with us or just get in touch - do it.</textarea></span>
-								</div>
-							</div>
-						</fieldset>
-						<div class="form-click wow fadeInUp" data-wow-delay="1s">
-							<button id="submit">Send Message</button>
-						</div>
-						<div id="alert">
-							<div class="notification error clearfix">
-								<p><strong>Attention!</strong> Please enter your message.</p>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div><!-- END Container -->
-	</div><!-- END Contact Form -->
-
-
-
-	</section><!-- END Contact -->
-
-	<!-- Begin Footer -->
-	<footer class="center black">
-		<div class="container">
-			<!-- Social -->
-			<div class="row">
-				<ul class="social col-xs-12">
-					
-					<li class="icon solid fa-envelope"><a href="https://marcos@mnttoken.com">e-mail</a></li>
-					<li class="icon brands fa-twitter"><a href="https://twitter.com/Mcosta215">Twitter</a></li>
-					<li class="icon brands fa-linkedin"><a
-							href="https://www.linkedin.com/in/marcos-costa-a276242/">Linkedin</a></li>
-				</ul>
-			</div>
-
-			<!-- Copyright -->
-			<div class="row">
-				<div class="col-xs-12">
-					<h6>copyright © 2022 M</h6>
-				</div>
-			</div>
-		</div><!-- END Container -->
-	</footer><!-- END Footer -->
-
-	</div><!-- END Main Wrap -->
-
-
-	<!-- IE 8 PAGE -->
-	<div class="modern-browser">
-		<div class="modern-container center dark">
-			<img src="images/logo.png" alt="logo">
-			<h1>Welcome to M.</h1>
-			<span class="separator"></span>
-			<p>Sorry, our website doesn't support your web-browser.<br>Maybe something more modern would do the trick.
-			</p>
-			<a href="http://www.google.com/chrome/" target="_blank" class="button">download chrome</a>
-		</div>
-	</div><!-- END IE 8 PAGE -->
-
-	<!-- Javascript -->
-	<script src="js/retina.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/plugins.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
-
 </html>
