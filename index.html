@@ -26,6 +26,17 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/portfolio.css">
+
+  <!-- Apply theme before paint to avoid flash -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 
 <body>
@@ -39,8 +50,22 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -178,7 +203,7 @@
               <span class="tag">Open Source</span>
             </div>
             <div class="project-links">
-              <a href="handfit/" class="btn-project">View Project</a>
+              <a href="https://marcosncosta1.github.io/handfit/" class="btn-project" target="_blank" rel="noopener">View Project</a>
             </div>
           </div>
         </div>
@@ -290,6 +315,43 @@
     </div>
   </section>
 
+  <!-- ===================== EDUCATION ===================== -->
+  <!--
+  HOW TO ADD AN EDUCATION ITEM:
+  Copy a .edu-item block, paste it inside .edu-list, and fill in your details.
+  -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-list">
+
+        <!--
+        TEMPLATE — copy and fill in:
+        <div class="edu-item">
+          <div class="edu-logo">
+            <img src="images/edu/INSTITUTION_LOGO.png" alt="Institution Name">
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">Degree / Certificate</h3>
+            <p class="edu-institution">Institution Name</p>
+            <p class="edu-date">Year – Year</p>
+            <p class="edu-desc">Optional short description.</p>
+          </div>
+        </div>
+        -->
+
+        <div class="edu-item">
+          <div class="edu-body">
+            <h3 class="edu-degree">Add your degree or certification here</h3>
+            <p class="edu-institution">Institution Name</p>
+            <p class="edu-date">Year – Year</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== CONTACT ===================== -->
   <section id="contact" class="section">
     <div class="container">
@@ -314,6 +376,16 @@
 
   <!-- ===================== JAVASCRIPT ===================== -->
   <script>
+    // ----- Dark mode -----
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      root.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    });
+
     // ----- Project filter -----
     const filterBtns = document.querySelectorAll('.filter-btn');
     const cards = document.querySelectorAll('.project-card');

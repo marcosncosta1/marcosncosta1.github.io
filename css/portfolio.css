@@ -18,9 +18,23 @@
   --accent-hover: #1d4ed8;
   --border: #e2e8f0;
   --card-shadow: 0 1px 3px rgba(0,0,0,.07), 0 6px 16px rgba(0,0,0,.05);
+  --nav-bg: rgba(255, 255, 255, 0.92);
   --radius: 10px;
   --nav-height: 64px;
   --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --bg-alt: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --border: #334155;
+  --card-shadow: 0 1px 3px rgba(0,0,0,.3), 0 6px 16px rgba(0,0,0,.2);
+  --nav-bg: rgba(15, 23, 42, 0.92);
 }
 
 html {
@@ -60,7 +74,7 @@ a {
   top: 0;
   z-index: 100;
   height: var(--nav-height);
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--nav-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
@@ -122,6 +136,39 @@ a {
   border-radius: 2px;
   transition: .25s;
 }
+
+/* ---- Theme toggle button ---- */
+.theme-toggle {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .2s, border-color .2s, background .2s;
+  margin-right: 8px;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Show moon in light mode, sun in dark mode */
+.icon-sun { display: none; }
+.icon-moon { display: block; }
+
+[data-theme="dark"] .icon-sun { display: block; }
+[data-theme="dark"] .icon-moon { display: none; }
 
 /* ---- Sections ---- */
 .section {
@@ -531,6 +578,81 @@ a {
   font-style: italic;
 }
 
+/* ---- Education ---- */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  transition: box-shadow .2s;
+}
+
+.edu-item:hover {
+  box-shadow: var(--card-shadow);
+}
+
+.edu-logo {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.edu-body {
+  flex: 1;
+}
+
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.edu-institution {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.edu-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 6px;
+}
+
+.edu-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 /* ---- Contact ---- */
 .contact-intro {
   color: var(--text-muted);
@@ -598,12 +720,12 @@ a {
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: var(--bg);
+    background: var(--nav-bg);
     border-bottom: 1px solid var(--border);
     flex-direction: column;
     padding: 20px 28px;
     gap: 18px;
-    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
   }
 
   .nav-links.open {
