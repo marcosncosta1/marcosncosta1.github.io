@@ -698,6 +698,113 @@ a {
   color: #fff;
 }
 
+/* ---- Awards ---- */
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.award-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-left: 3px solid #f59e0b;
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  transition: box-shadow .2s;
+}
+
+.award-item:hover {
+  box-shadow: var(--card-shadow);
+}
+
+.award-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.award-body {
+  flex: 1;
+}
+
+.award-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.award-event {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.award-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+
+.award-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ---- Beyond the Code ---- */
+.athlete-card {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.athlete-card:hover {
+  box-shadow: var(--card-shadow);
+  transform: translateY(-3px);
+}
+
+.athlete-img {
+  width: 420px;
+  min-height: 280px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+
+.athlete-body {
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.athlete-body h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.athlete-body p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 /* ---- Footer ---- */
 .footer {
   background: var(--text);
@@ -767,6 +874,15 @@ a {
   .project-card.featured .project-img {
     width: 100%;
     height: 190px;
+  }
+
+  .athlete-card {
+    flex-direction: column;
+  }
+
+  .athlete-img {
+    width: 100%;
+    min-height: 220px;
   }
 
   .section {

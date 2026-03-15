@@ -49,8 +49,9 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#beyond">Beyond the Code</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
@@ -305,6 +306,26 @@
           </div>
         </div>
 
+        <!-- Real-Time Chinese Hand Gesture Classifier -->
+        <div class="project-card" data-category="ml-ai">
+          <img class="project-img" src="images/portfolio/hand_digit.gif" alt="Real-Time Chinese Hand Gesture Classifier">
+          <div class="project-body">
+            <h3 class="project-title">Real-Time Chinese Hand Sign Classifier</h3>
+            <p class="project-desc">
+              A Streamlit app to build your own Chinese number hand-sign classifier (数字 0–9)
+              from scratch. Collect training data via webcam, train an MLP on MediaPipe hand
+              landmarks, and run live inference — all in the same browser UI.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">MediaPipe</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">Streamlit</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Car Racing — DQN Variants -->
         <div class="project-card" data-category="rl ml-ai">
           <img class="project-img" src="images/portfolio/car_racing_dqn.gif" alt="Car Racing DQN Variants">
@@ -427,29 +448,54 @@
   </section>
 
   <!-- ===================== PUBLICATIONS ===================== -->
-  <!--
-  HOW TO ADD A PUBLICATION:
-  Copy the .pub-item block below, paste it inside .publications-list,
-  remove the .empty-note paragraph, and fill in your details.
-
-  <div class="pub-item">
-    <img class="pub-thumb" src="images/portfolio/YOUR_PAPER_IMG.jpg" alt="Paper thumbnail">
-    <div class="pub-body">
-      <h3 class="pub-title">Your Paper Title</h3>
-      <p class="pub-authors">Author One, Marcos Costa, Author Three</p>
-      <p class="pub-venue">Conference / Journal Name, Year</p>
-      <div class="pub-links">
-        <a href="PAPER_URL" class="btn-project" target="_blank" rel="noopener">Paper</a>
-        <a href="GITHUB_URL" class="btn-project btn-outline" target="_blank" rel="noopener">Code</a>
-      </div>
-    </div>
-  </div>
-  -->
+  <!-- Hidden until publications are available
   <section id="publications" class="section section-alt">
     <div class="container">
       <h2 class="section-title">Publications</h2>
       <div class="publications-list">
         <p class="empty-note">No publications yet — check back soon.</p>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ===================== AWARDS ===================== -->
+  <section id="awards" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Awards</h2>
+      <div class="awards-list">
+
+        <div class="award-item">
+          <div class="award-icon">🏆</div>
+          <div class="award-body">
+            <h3 class="award-title">1st Place — Base Network AI Hackathon (Coinbase)</h3>
+            <p class="award-event">London, UK</p>
+            <p class="award-date">Feb 2025</p>
+            <p class="award-desc">
+              Built <strong>Base Super Assistant</strong>, an AI-powered trading assistant that automates
+              on-chain trading through natural language processing and ML-driven decision-making.
+              Leveraged OpenAI's API and LangChain for voice and text-based trade execution via Telegram,
+              integrated FastAPI and the Base SDK for real-time blockchain transactions, and applied
+              AI-based risk assessment for automated trade execution.
+            </p>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-icon">🏆</div>
+          <div class="award-body">
+            <h3 class="award-title">1st Place (Team) — AI/ML Trading Hackathon (EPFL)</h3>
+            <p class="award-event">Jump Trading × EPFL Trading Blitz — Lausanne, Switzerland</p>
+            <p class="award-date">Oct 2025</p>
+            <p class="award-desc">
+              Won 1st place as a team (4th individually) at a high-pressure quantitative trading
+              hackathon with 75 participants and live, rapidly shifting market simulations.
+              Collaborated in a cross-functional team to design and execute disciplined trading
+              strategies under macro-driven volatility over a six-hour session.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -515,6 +561,33 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BEYOND THE CODE ===================== -->
+  <section id="beyond" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Beyond the Code</h2>
+      <div class="athlete-card">
+        <img class="athlete-img" src="images/portfolio/athlete_hero.jpg" alt="Marcos Costa — Alpinist">
+        <div class="athlete-body">
+          <h3>Professional Climber &amp; Alpinist</h3>
+          <p>
+            Long before writing my first line of code, I was climbing mountains. As a professional
+            alpinist for over 12 years I've led expeditions across the Himalayas and Patagonia,
+            summited Gasherbrum II (8,035m), and been twice nominated for Brazil's Golden Carabiner
+            Award for Best Alpinist. The same focus and resilience I developed on high-altitude
+            walls is what I bring to every engineering challenge.
+          </p>
+          <p>
+            I'm also the founder of MNT Token — a blockchain project born from this passion,
+            building a Web3 community around outdoor adventure and exploration.
+          </p>
+          <div class="project-links">
+            <a href="https://marcosncosta.wixsite.com/marcoscosta" class="btn-project" target="_blank" rel="noopener">Athlete Website</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
