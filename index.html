@@ -176,6 +176,7 @@
       <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="ml-ai">ML / AI</button>
+        <button class="filter-btn" data-filter="rl">RL</button>
         <button class="filter-btn" data-filter="engineering">Engineering</button>
         <button class="filter-btn" data-filter="web">Web</button>
       </div>
@@ -234,7 +235,7 @@
         </div>
 
         <!-- Car Racing — DQN Variants -->
-        <div class="project-card" data-category="ml-ai">
+        <div class="project-card" data-category="rl ml-ai">
           <img class="project-img" src="images/portfolio/car_racing_dqn.gif" alt="Car Racing DQN Variants">
           <div class="project-body">
             <h3 class="project-title">Car Racing — DQN Variants</h3>
@@ -255,7 +256,7 @@
         </div>
 
         <!-- Flappy Bird — DQN vs Double DQN -->
-        <div class="project-card" data-category="ml-ai">
+        <div class="project-card" data-category="rl ml-ai">
           <img class="project-img" src="images/portfolio/flappybird_dqn.gif" alt="Flappy Bird DQN">
           <div class="project-body">
             <h3 class="project-title">Flappy Bird — DQN vs Double DQN</h3>
@@ -467,7 +468,7 @@
         btn.classList.add('active');
         const f = btn.dataset.filter;
         cards.forEach(card => {
-          card.style.display = (f === 'all' || card.dataset.category === f) ? '' : 'none';
+          card.style.display = (f === 'all' || card.dataset.category.split(' ').includes(f)) ? '' : 'none';
         });
       });
     });
